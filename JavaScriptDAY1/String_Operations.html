@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var str="Hello I am Alek";
+        console.log(str);
+
+    // In order to print the first occurence of a substring
+    var first_position=str.indexOf('Alek');
+    console.log(first_position);
+    // In order to print the last occurence of a substring
+    var last_position=str.lastIndexOf('Alek');
+    console.log(last_position);
+
+    //Slicing operation
+    var str_slice=str.slice(0,4);
+    console.log(str_slice);
+    //Slice can take negative values whereas slice cannot take negetive value
+    var str_slice=str.substring(0,4);
+    console.log(str_slice);
+    //substr method
+    var str_slice=str.substr(0,4);
+    console.log(str_slice);
+
+    //Replacing a substring
+    var replace_string=str.replace('Alek','Alekhaya');
+    console.log(str);
+    console.log(replace_string);
+
+    //In order to convert the string to upper case
+    console.log(str.toUpperCase());
+    //In order to convert it into lower case
+    console.log(str.toLowerCase());
+
+    //Trimming
+    var strwith_white_spaces="  this    is       wwwwww"
+    console.log(strwith_white_spaces);
+    console.log(strwith_white_spaces.trim());
+
+    //Character Extraction
+    var char=str.charAt(1);
+    console.log(char);
+
+    //Get the UTF-16 code of a particular character
+    var char1=str.charCodeAt(1);
+    console.log(char1);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

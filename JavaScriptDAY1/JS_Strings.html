@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings in JS</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>This is a tutorial</h1>
+        <div id="content"></div>
+        <div class="box">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, deleniti! Iusto, delectus rerum? Porro
+            quia tenetur, cumque, recusandae vitae quaerat earum voluptatum incidunt sit cupiditate molestiae excepturi,
+            ex sapiente optio modi totam dolores molestias consectetur. Dolorum animi consequatur inventore eius
+            doloribus dignissimos praesentium, repellendus, eaque asperiores eos quod, labore culpa!
+        </div>
+    </div>
+    <script>
+        var string='this"s';
+        var name='Alek';
+        var temp=`${string} is a boy named ${name}`;
+        console.log(temp);
+        console.log(string+name);
+        console.log(string.concat('Hello'))
+        //Inorder to get the length of the string
+        var length=name.length;
+        console.log(`Length of name is ${length}`);
+        //In order to go to new line
+        console.log("Hello \\nworld\nAlek\tand")
+        //We can also create a string like this
+        var x=new String("Hello World");
+        console.log(x)
+        //Interaction with HTML
+        document.getElementById('content').innerHTML='<h3>This is a heading</h3>'
+        
+    </script>
+</body>
+
+</html>

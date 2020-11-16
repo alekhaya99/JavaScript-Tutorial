@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array and Objects</title>
+    <script>
+        let number=32;
+        let string="string";
+        let bool=true;
+        let no=null;
+        let notdefined=undefined;
+
+        let student={
+            name: "Alek",
+            college:"MDIS",
+            marks:"A+",
+            percentage:98,
+        }
+        console.log(student);
+
+
+        //Arrays
+        let names=[2,3,1,"Alek"];
+        console.log(names);
+        console.log(names[3]);
+
+        //In order to get the length
+        console.log(names.length);
+
+        //In order to sort the list
+        names=names.sort();
+names.push("This is pushed");
+console.log(names);
+
+//Creating an empty array of n-empty columns
+let emptyArray=new Array(25);
+console.log(emptyArray);
+    </script>
+</head>
+<body>
+    <div class="container">Hey there</div>
+</body>
+</html>

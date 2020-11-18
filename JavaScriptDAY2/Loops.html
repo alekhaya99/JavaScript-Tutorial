@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let a=0;
+
+        //Various types of For Loop
+        for (a=0;a<=5;a++){
+            console.log(a);
+        }
+        let char=['a','b','c','d'];
+        for (let index=0;index<char.length;index++){
+            console.log(char[index]);
+        }
+
+        char.forEach(function f(element){
+            console.log("Hey there "+element+" this is modern JS");
+        });
+
+        for (element of char){
+            console.log("Hey there "+element+" this is modern JS")
+        }
+
+        //Iterating key over objects
+        let student={
+            name:"Alek",
+            age:4,
+            stream:"Electrical"
+        }
+        for(key in student){
+            console.log(`The ${key} of student is ${student[key]}`);
+        }
+        //While loop
+        let age=0;
+        while(age<5){
+            console.log(`age ${age} is less than 5`);
+            age++;
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        LOOP TUTORIAL
+    </div>
+</body>
+</html>

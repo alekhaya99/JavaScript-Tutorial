@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Set TIME-OUT WITH CLEAR TIME-OUT</title>
+</head>
+<body>
+    <div class="con">
+        Heloo World
+        The time now is <span id="time"></span>
+    </div>
+    <script>
+        // setTimeout is used if we want to run a function one time
+        //clearTimeout is used when we want to run a function repetadely
+        function hello(country){
+            console.log("Hello World "+country);
+        }
+        setTimeout(hello,5000,"Singapore");
+        // console.log(timeOut)
+        setInterval(hello,5000,"Singapore");
+
+        function display_the_time(){
+            time=new Date();
+            console.log(time)
+            document.getElementById('time').innerHTML=time
+        }
+        setInterval(display_the_time,1000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Tutorial</title>
+</head>
+<body>
+    <div class="cont">This is a JSON Tutorial</div>
+    <script>
+    let json={
+        name:"ALek",
+        student:"YES",
+        course:"Electrical and Electronics Engineering",
+        year:"Final Year"
+
+    }
+    console.log(json);
+
+    //In order to stringify the object
+    let JsonStr=JSON.stringify(json);
+    console.log(JsonStr)
+
+    //In order to replace a JSON string
+    JsonStr=JsonStr.replace("Final Year","3rd Year");
+    console.log(JsonStr)
+
+    //In order to convert JSON sting to object
+    newJSONObj=JSON.parse(JsonStr);
+    console.log(newJSONObj)
+</script>
+</body>
+</html>

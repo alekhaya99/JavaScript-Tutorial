@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARROW FUNCTION</title>
+</head>
+<body>
+    <div class="cont">
+        This is an tutorial for arrow function
+    </div>
+    <script>
+        // Arrow Function is a short cut
+        greet= ()=>{
+            console.log("HELLO WORLD")
+        }
+        greet();
+
+        let sum=(a,b)=>a+b;
+        let quater=a=>a/4;
+
+        let Object={
+            names:['Alek','Ram',"Sree","Victor",'Kevin'],
+            speak(){
+                this.names.forEach((student)=>{
+                    console.log(student + " is present today")
+                });
+            }
+        }
+        Object.speak();
+    </script>
+</body>
+</html>

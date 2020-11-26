@@ -9,9 +9,15 @@ const about = fs.readFileSync('NodeJS/about.html')
 
 const server=http.createServer((req,res)=>{
     console.log(req.url)
+    url = req.url;
     res.statusCode=200;
     res.setHeader('Content-type','text/html');
-    res.end(home);
+    if(url == '/'){
+        res.end(home);
+    }
+    else  {
+        res.end(about);
+    }
 });
 
 server.listen(port, hostname, () => {
